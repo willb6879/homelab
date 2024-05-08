@@ -1,0 +1,16 @@
+---
+- name: Update VMs
+  hosts: hosts-management-vms
+  become: yes
+
+  tasks:
+    - name: Update packages
+      apt:
+        update_cache: yes
+    
+    - name: Upgrade all packages
+      apt: 
+        upgrade: yes
+        autoremove: yes
+        autoclean: yes
+        force_apt_get: yes
