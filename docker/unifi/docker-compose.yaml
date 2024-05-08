@@ -1,0 +1,27 @@
+# https://docs.linuxserver.io/images/docker-unifi-controller
+---
+version: "2.1"
+services:
+  unifi-controller:
+    image: lscr.io/linuxserver/unifi-controller:latest
+    container_name: unifi-controller
+    environment:
+      - PUID=1000 # for UserID
+      - PGID=1000 # for GroupID
+      - TZ=Etc/UTC # specify a timezone to use, see this https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
+      - MEM_LIMIT=1024 # Optionally change the Java memory limit (in Megabytes). Set to default to reset to default (optional)
+      - MEM_STARTUP=1024 # Optionally change the Java initial/minimum memory (in Megabytes). Set to default to reset to default (optional)
+    volumes:
+      - /unifi/controller/config:/config # All Unifi data stored here
+    ports:
+      - 8443:8443 # Unifi web admin port
+      - 3478:3478/udp # Unifi STUN port
+      - 10001:10001/udp # Required for AP discovery
+      - 8080:8080 # Required for device communication
+      - 1900:1900/udp # Required for Make controller discoverable on L2 network option (optional)
+      - 8843:8843 # Unifi guest portal HTTPS redirect port (optional)
+      - 8880:8880 # Unifi guest portal HTTP redirect port (optional)
+      - 6789:6789 # For mobile throughput test (optional)
+      - 5514:5514/udp # Remote syslog port (optional)
+
+    restart: unless-stopped # Restart unless your stop it manually
