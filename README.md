@@ -16,11 +16,12 @@ This repository is a central place for all the configuration files I use in my h
 ## Features
 * **Docker Configurations**: mostly docker compose files for docker containers that host various foundational services in a network
 
-    * [Docker Documentation](https://docs.docker.com/)
+    * <a href="https://docs.docker.com/" target="_blank" rel="noopener noreferrer">Docker Documentation</a>
+
 * **Ansible Playbooks**: used to automate server configurations and deployments (this is still in an very early state in the repo)
 
-    * [Ansible Documentation](https://docs.ansible.com/)
-    * [Ansible Sempahore (Open-Source Ansible UI)](https://github.com/semaphoreui/semaphore)
+    * <a href="https://docs.ansible.com/" target="_blank" rel="noopener noreferrer">Ansible Documentation</a>
+    * <a href="https://github.com/semaphoreui/semaphore" target="_blank" rel="noopener noreferrer">Ansible Sempahore (Open-Source Ansible UI)</a>
 * **Documentation** Notes and guides to help understand and use the configurations properly
 
 ## Requirements
@@ -37,12 +38,12 @@ gh repo clone willb6879/homelab # github CLI
 ```
 
 2. Install Virtualization Host
-* **Proxmox** [Install](https://www.proxmox.com/en/proxmox-virtual-environment/get-started) - This is what I use
-* **XCP-ng** [Install](https://docs.xcp-ng.org/installation/install-xcp-ng/])
-* VMware [Install](https://www.vmware.com/tryvmware_tpl/hypervisor7.html) - NOTE: 
-Requires licensing
+* **Proxmox** <a href="https://www.proxmox.com/en/proxmox-virtual-environment/get-started" target="_blank" rel="noopener noreferrer">Install</a> - This is what I use
+* **XCP-ng** <a href="https://docs.xcp-ng.org/installation/install-xcp-ng/" target="_blank" rel="noopener noreferrer">Install</a>
+* VMware <a href="https://www.vmware.com/tryvmware_tpl/hypervisor7.html" target="_blank" rel="noopener noreferrer">Install</a>  - NOTE: Requires licensing
 
-Or use any other virtualization platform you are comfortable with
+
+Or, use any other virtualization platform you are comfortable with
 
 ## Contributing
 This repository is primarily for personal use, but if you have suggestions or improvements, feel free to submit a pull request. Ensure that your contributions align with the goals of the repository and adhere to good coding standards.
