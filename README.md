@@ -16,11 +16,12 @@ This repository is a central place for all the configuration files I use in my h
 ## Features
 * **Docker Configurations**: mostly docker compose files for docker containers that host various foundational services in a network
 
-    * [Docker Documentation](https://docs.docker.com/)
+    * <a href="https://docs.docker.com/" target="_blank" rel="noopener noreferrer">Docker Documentation</a>
+
 * **Ansible Playbooks**: used to automate server configurations and deployments (this is still in an very early state in the repo)
 
-    * [Ansible Documentation](https://docs.ansible.com/)
-    * [Ansible Sempahore (Open-Source Ansible UI)](https://github.com/semaphoreui/semaphore)
+    * <a href="https://docs.ansible.com/" target="_blank" rel="noopener noreferrer">Ansible Documentation</a>
+    * <a href="https://github.com/semaphoreui/semaphore" target="_blank" rel="noopener noreferrer">Ansible Sempahore (Open-Source Ansible UI)</a>
 * **Documentation** Notes and guides to help understand and use the configurations properly
 
 ## Requirements
