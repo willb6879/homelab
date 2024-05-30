@@ -2,20 +2,25 @@
 Hi my name is Will. Welcome to my HomeLab repository! This repository contains a collection of helpful configuration files, focusing on Docker and Ansible setups, to streamline the management and automation of my personal home lab environment. This repository is intended for my own use, but feel free to explore and use any configurations that might benefit your own setup.
 
 ## Table of Contents
-* Introduction
-* Features
-* Requirements
-* Installation
-* Usage
-* Contributing
-* License
+* [Introduction](#introduction)
+* [Features](#features)
+* [Requirements](#requirements)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [License](#license)
 
 ## Introduction
 This repository is a central place for all the configuration files I use in my home lab. It includes Docker configurations for containerized applications and Ansible playbooks for automated setups and maintenance tasks. Be aware these configuration files are subject to change and directories may expand in future should I find better implementations.
 
 ## Features
 * **Docker Configurations**: mostly docker compose files for docker containers that host various foundational services in a network
-* **Ansible Playbooks** scripts to automate server configurations and deployments (this is still in an early state in the repo)
+
+    * [Docker Documentation](https://docs.docker.com/)
+* **Ansible Playbooks**: used to automate server configurations and deployments (this is still in an very early state in the repo)
+
+    * [Ansible Documentation](https://docs.ansible.com/)
+    * [Ansible Sempahore (Open-Source Ansible UI)](https://github.com/semaphoreui/semaphore)
 * **Documentation** Notes and guides to help understand and use the configurations properly
 
 ## Requirements
@@ -30,3 +35,31 @@ git clone https://github.com/yourusername/homelab.git # https
 git clone git@github.com:yourusername/homelab.git # ssh
 gh repo clone willb6879/homelab # github CLI
 ```
+
+2. Install Virtualization Host
+* **Proxmox** [Install](https://www.proxmox.com/en/proxmox-virtual-environment/get-started) - This is what I use
+* **XCP-ng** [Install](https://docs.xcp-ng.org/installation/install-xcp-ng/])
+* VMware [Install](https://www.vmware.com/tryvmware_tpl/hypervisor7.html) - NOTE: 
+Requires licensing
+
+Or use any other virtualization platform you are comfortable with
+
+## Contributing
+This repository is primarily for personal use, but if you have suggestions or improvements, feel free to submit a pull request. Ensure that your contributions align with the goals of the repository and adhere to good coding standards.
+
+1. **Fork** the repository.
+
+2.  Create a new **branch** (```git checkout -b feature-branch```).
+
+3. Make your **changes**.
+4. Commit your changes (```git commit -m 'Add new feature'```)
+5. **Push** to the branch (```git push origin feature-branch```).
+6. Open a **pull request**.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/willb6879/homelab/blob/main/LICENSE) file for details.
+
+
+---
+
+Thank you for checking out my HomeLab repository! If you have any questions or need further assistance, feel free to open an issue. Happy configuring!
