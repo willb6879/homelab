@@ -5,13 +5,13 @@ Hi my name is Will. Welcome to my HomeLab repository! This repository contains a
 * [Introduction](#introduction)
 * [Features](#features)
 * [Requirements](#requirements)
-* [Installation](#installation)
-* [Usage](#usage)
 * [Contributing](#contributing)
 * [License](#license)
 
 ## Introduction
 This repository is a central place for all the configuration files I use in my home lab. It includes Docker configurations for containerized applications and Ansible playbooks for automated setups and maintenance tasks. Be aware these configuration files are subject to change and directories may expand in future should I find better implementations.
+
+> :warning: Be aware, software files can change over time. I do my best to keep up with the latest changes and releases, but please understand that this won’t always be the case.
 
 ## Features
 * **Docker Configurations**: mostly docker compose files for docker containers that host various foundational services in a network
@@ -25,25 +25,14 @@ This repository is a central place for all the configuration files I use in my h
 * **Documentation** Notes and guides to help understand and use the configurations properly
 
 ## Requirements
-* It is recommended that you have some sort of virtualization node(s) although a single local host will work as well. We want a virtualization node (such as Proxmox) so we can make good use out of Ansible, specifically Ansible playbooks
-* **Highly recommended** you use a linux OS distrobution for running docker
-* Some basic knowledge of networking, Docker and Ansible
-
-## Installation
-1. Clone the repo
-```bash
-git clone https://github.com/willb6879/homelab.git # https
-git clone git@github.com:willb6879/homelab.git # ssh
-gh repo clone willb6879/homelab # github CLI
-```
-
-2. Install Virtualization Host
+1. Use a virtualization platform (such as Proxmox) to run VMs so we can make good use out of Ansible, specifically Ansible playbooks - below are some common virtualization platforms
 * **Proxmox** <a href="https://www.proxmox.com/en/proxmox-virtual-environment/get-started" target="_blank" rel="noopener noreferrer">Install</a> - This is what I use
 * **XCP-ng** <a href="https://docs.xcp-ng.org/installation/install-xcp-ng/" target="_blank" rel="noopener noreferrer">Install</a>
-* VMware <a href="https://www.vmware.com/tryvmware_tpl/hypervisor7.html" target="_blank" rel="noopener noreferrer">Install</a>  - NOTE: Requires licensing
+* **VMware** <a href="https://www.vmware.com/tryvmware_tpl/hypervisor7.html" target="_blank" rel="noopener noreferrer">Install</a>  - NOTE: Requires licensing
 
+2. Highly recommended you use a Linux OS distribution for running docker
 
-Or, use any other virtualization platform you are comfortable with
+3. Have some basic knowledge of networking, containers, and an idea of [IAC](https://aws.amazon.com/what-is/iac/#:~:text=Infrastructure%20as%20code%20(IaC)%20is,%2C%20database%20connections%2C%20and%20storage.) (infrastructure as code)
 
 ## Contributing
 This repository is primarily for personal use, but if you have suggestions or improvements, feel free to submit a pull request. Ensure that your contributions align with the goals of the repository and adhere to good coding standards.
