@@ -32,8 +32,8 @@ This repository is a central place for all the configuration files I use in my h
 ## Installation
 1. Clone the repo
 ```bash
-git clone https://github.com/yourusername/homelab.git # https
-git clone git@github.com:yourusername/homelab.git # ssh
+git clone https://github.com/willb6879/homelab.git # https
+git clone git@github.com:willb6879/homelab.git # ssh
 gh repo clone willb6879/homelab # github CLI
 ```
 
