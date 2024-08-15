@@ -11,7 +11,7 @@ services:
       - PGID=1000
       - TZ=Etc/UTC
       - SERVERPORT=51820 #optional
-      - SERVERURL=www.aliceinframes.net #optional
+      - SERVERURL=yourdomain.com #optional
       - PEERS=1 #optional
       - PEERDNS=auto #optional
       - INTERNAL_SUBNET=10.0.10.0 #optional
