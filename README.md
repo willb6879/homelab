@@ -14,6 +14,9 @@ This repository is a central place for all the configuration files I use in my h
 > :warning: Be aware, software files can change over time. I do my best to keep up with the latest changes and releases, but please understand that this won’t always be the case.
 
 ## Features
+* **Unifi**: I use their hardware for switches and routing at the moment...below is a link for the officially supported unifi controller service install script for Linux.
+
+    * <a href="https://glennr.nl/s/unifi-network-controller" target="_blank" rel="noopener noreferrer">Glenn R. Unifi Install Script</a>
 * **Docker Configurations**: mostly docker compose files for docker containers that host various foundational services in a network
 
     * <a href="https://docs.docker.com/" target="_blank" rel="noopener noreferrer">Docker Documentation</a>
